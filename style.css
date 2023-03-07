@@ -20,7 +20,7 @@ main.container {
     url(images/bg-pattern-desktop.svg);
   background-repeat: no-repeat, no-repeat;
   border-radius: 1.2rem;
-  background-position: right 607px bottom 60px, right 547px bottom -169px;
+  background-position: right 607px bottom 60px, right 605px bottom -169px
   position: relative;
   justify-content: end;
   padding: 1px 2rem;
