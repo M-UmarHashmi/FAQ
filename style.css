@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+main.container {
+  width: 58rem;
+  height: 30rem;
+  background-color: white;
+  display: flex;
+  background-image: url(images/illustration-woman-online-desktop.svg),
+    url(images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  border-radius: 1.2rem;
+  background-position: right 519px bottom 68px, right 547px bottom -169px;
+  position: relative;
+  justify-content: end;
+  padding: 1px 2rem;
+  margin-left: 6rem;
+  box-shadow: 2px 2px 28px 10px #888888;
+}
+img.image {
+    display: none;
+}
+div.first {
+  width: 22rem;
+  margin-right: 3rem;
+}
+img.box {
+  position: absolute;
+  top: 199px;
+  left: -132px;
+}
+div.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+div.question p {
+  display: inline;
+  margin-bottom: 0.6rem;
+  margin-top: 10px;
+}
+hr {
+  height: 1px;
+  background-color: #e2dede;
+  border: none;
+  margin: 0;
+}
+p.answer {
+  margin-top: 0;
+  font-size: 14px;
+}
+.hide {
+  height: 0;
+  opacity: 0;
+}
+@media only screen and (max-width: 945px) {
+  body {
+    height: auto;
+  }
+ .box {
+    display: none;
+  }
+  .container {
+    max-width: 80%;
+    margin: auto !important;
+    justify-content: center !important;
+    padding: 1rem !important;
+    background-image: none !important;
+    flex-direction: column;
+    align-items: center !important;
+    height: auto !important;
+    margin-top: 10rem !important;
+    padding-top: 6rem !important;
+    padding-bottom: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  img.image {
+    display: block;
+    position: absolute;
+    top: -24vh;
+    width: 20rem;
+  }
+  div.first img { 
+    margin-left: 1.5rem;
+  }
+  div.first img:nth-of-type(2){
+    top: 0vh;
+  }
+  div.first {
+    margin-right: 0;
+    width: 90%;
+  }
+
+}
+@media only screen and (max-width: 482px){
+    div.first {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    img.image {
+        width: 16rem;
+        top: -20vh;
+    }
+}
+@media only screen and (max-width: 350px){
+    img.image {
+        width: 13rem;
+        top: -16vh;
+    }
+    .container {
+        margin-top: 8rem !important;
+    }
+}
